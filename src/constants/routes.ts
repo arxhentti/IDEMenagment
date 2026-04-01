@@ -1,0 +1,1 @@
+export const ROUTES={dashboard:'/',login:'/login',register:'/register'};
