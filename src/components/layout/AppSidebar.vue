@@ -1,8 +1,7 @@
 <template>
   <aside class="sidebar">
     <div class="sidebar__brand">
-      <p class="sidebar__eyebrow">OrderFlow</p>
-      <strong>Operations</strong>
+      <img class="sidebar__logo" src="/image1.png" alt="OrderFlow brand" />
     </div>
 
     <div class="sidebar__mobile-nav">
@@ -47,28 +46,17 @@ function handleNavigation(event: Event) {
 
 <style scoped>
 .sidebar__brand {
-  display: grid;
-  gap: 0.2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   padding: 0.6rem 0.75rem 1rem;
 }
 
-.sidebar__brand strong,
-.sidebar__eyebrow {
-  margin: 0;
-}
-
-.sidebar__eyebrow {
-  color: var(--color-primary);
-  font-size: 0.72rem;
-  font-weight: 600;
-  letter-spacing: 0.08em;
-  text-transform: uppercase;
-}
-
-.sidebar__brand strong {
-  color: var(--color-text);
-  font-size: 1.15rem;
-  font-weight: 600;
+.sidebar__logo {
+  width: 132px;
+  height: 86px;
+  object-fit: contain;
+  flex-shrink: 0;
 }
 
 .sidebar__nav {
@@ -104,6 +92,11 @@ function handleNavigation(event: Event) {
 
   .sidebar__brand {
     padding-bottom: 0;
+  }
+
+  .sidebar__logo {
+    width: 112px;
+    height: 72px;
   }
 
   .sidebar__mobile-nav {

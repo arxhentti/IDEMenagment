@@ -186,6 +186,15 @@ a {
   line-height: 1.7;
 }
 
+.auth-hero__brand-image {
+  width: min(100%, 440px);
+  margin-top: 0.75rem;
+  border-radius: 1.5rem;
+  border: 1px solid rgba(148, 163, 184, 0.14);
+  box-shadow: 0 28px 60px rgba(2, 6, 23, 0.45);
+  object-fit: cover;
+}
+
 .auth-panel {
   border: 1px solid var(--color-border);
   border-radius: 28px;
@@ -284,5 +293,10 @@ main {
 
   .auth-hero {
     gap: 16px;
+  }
+
+  .auth-hero__brand-image {
+    width: 100%;
+    border-radius: 1.1rem;
   }
 }
